@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Canvas Drawing</title>
+		<link rel="icon" type="image/x-icon" href="/logo.png" />
+		<link rel="stylesheet" href="bootstrap.css" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playball&display=swap" rel="stylesheet" />
+	</head>
+	<body style="background-color: #1f4d08">
+		<div
+			class="d-flex flex-column justify-content-center align-items-center mx-auto text-white position-relative rounded-4"
+			style="background-color: #0d152bcd; width: fit-content; padding: 1.5rem; margin-top: 1.5rem; box-shadow: 3px 3px 5px 4px #202535cd"
+		>
+			<h1 class="font-ball fw-bolder">Football Kits</h1>
+			<div class="row my-4 w-100 px-3 py-1 pb-3 border rounded-3 font-josefin gy-3" style="box-shadow: 3px 3px 5px 4px #aaaaaa33">
+				<div class="col-6 d-flex gap-3 align-items-center justify-content-center">
+					<label>Shirt:</label>
+					<input type="color" id="shirtPrimaryColor" value="#000000" />
+					<input type="color" id="shirtSecondaryColor" value="#1fa775" />
+				</div>
+				<div class="col-6 d-flex gap-3 align-items-center justify-content-center">
+					<label for="#shortsColor">Shorts:</label>
+					<input type="color" id="shortsColor" value="#000000" />
+				</div>
+				<div class="col-6 d-flex gap-3 align-items-center justify-content-center">
+					<label for="#sleaveColor">Sleave:</label>
+					<input type="color" id="sleaveColor" value="#333333" />
+				</div>
+				<div class="col-6 d-flex gap-3 align-items-center justify-content-center">
+					<label for="#markColor">Mark:</label>
+					<input type="color" id="markColor" value="#ffffff" />
+				</div>
+			</div>
+			<div class="d-flex mb-3 gap-3 font-josefin">
+				<div id="plain" class="px-3 py-2 rounded-3 btn-type active">Plain</div>
+				<div id="striped" class="px-3 py-2 rounded-3 btn-type">Striped</div>
+				<div id="hoops" class="px-3 py-2 rounded-3 btn-type">Hoops</div>
+				<div id="sash" class="px-3 py-2 rounded-3 btn-type">Sash</div>
+				<div id="half" class="px-3 py-2 rounded-3 btn-type">Half</div>
+			</div>
+			<canvas id="myCanvas" width="500" height="500" style="border-radius: 1rem; background-color: rgba(108, 200, 231, 0.2); box-shadow: 3px 3px 3px 0px rgb(24, 48, 56)"></canvas>
+			<img src="/logo.png" alt="." width="3000" height="3000" style="width: 130px; height: 130px; position: absolute; bottom: 0rem; right: 0rem; transform: translate(30%, -10%)" />
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

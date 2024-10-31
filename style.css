@@ -1,0 +1,25 @@
+.font-ball {
+	font-family: "Playball", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.font-josefin {
+	font-family: "Josefin Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.btn-type {
+	background-color: inherit;
+	color: white;
+	border: 1px solid #ffffff22;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn-type.active {
+	border: 1px solid #ffffff;
+	box-shadow: 3px 3px 6px 5px #aaaaaa33;
+}
