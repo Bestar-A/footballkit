@@ -21,5 +21,58 @@
 
 .btn-type.active {
 	border: 1px solid #ffffff;
-	box-shadow: 3px 3px 6px 5px #aaaaaa33;
+	box-shadow: 3px 3px 6px 5px #aaaaaacc;
+}
+
+.active::before,
+.active::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: linear-gradient(45deg, #bbdef0 0%, #fbd87f 25%, #00a6a6 50%, #6369d1 75%, #f75590 90%, #f75590 100%);
+	background-size: 400%;
+	z-index: -1;
+	animation: glow 5s linear infinite;
+	width: 100%;
+	border-radius: 1rem;
+}
+
+.active::after {
+	filter: blur(25px);
+	transform: translate3d(0, 0, 0);
+}
+
+@keyframes glow {
+	0% {
+		background-position: 0 0;
+	}
+
+	50% {
+		background-position: 100% 0;
+	}
+
+	100% {
+		background-position: 0 0;
+	}
+}
+
+@keyframes rotate {
+	from {
+		transform: translate(30%, -10%) rotate(0deg);
+	}
+	to {
+		transform: translate(30%, -10%) rotate(360deg);
+	}
+}
+
+.rotate-image {
+	width: 130px;
+	height: 130px;
+	position: absolute;
+	bottom: 0rem;
+	right: 0rem;
+	animation: rotate 10s linear infinite;
 }
