@@ -1,5 +1,5 @@
 # Football Kit
 
-#### Visit 👉 https://bestardev.github.io/footballkit/
+#### Visit 👉 https://bestar-a.github.io/footballkit
 
 <img src="./home.png">
